@@ -34,3 +34,26 @@ Feature: Employees origin
       | Anne       | Anne is from London      |
       | Laura      | Laura is from Seattle    |
 
+  Scenario: Select all employees and verify base cities are displayed
+    And user clicks following employees checkboxes
+      | Andrew     |
+      | Nancy      |
+      | Janet      |
+      | Margaret   |
+      | Steven     |
+      | Michael    |
+      | Robert     |
+      | Anne       |
+      | Laura      |
+    And user clicks  on the View selected data button
+    Then all the employee origins should match following data
+      | Andrew is from Tacoma    |
+      | Nancy is from Seattle    |
+      | Janet is from Kirkland   |
+      | Margaret is from Redmond |
+      | Steven is from London    |
+      | Michael is from London   |
+      | Robert is from London    |
+      | Anne is from London      |
+      | Laura is from Seattle    |
+
