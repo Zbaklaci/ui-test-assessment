@@ -74,3 +74,18 @@ runners package
 
 •	Configuring the plugin will provide us a pretty HTML report.
 
+•	In order to get a pretty HTML report we have to run the tests from mvn verify.
+
+•	Pretty html report is added into project files.
+
+How to run the tests?
+
+•	Run from CukesRunner: SetUp the configuration, delete tags line and click Run menu and select Run 'CukesRunner'button (Run->Run 'CukesRunner') on the top menu of IntelliJ run all tests. To run specific tests enter the tags of tests which are put in feature file.
+
+•	Run from Maven verify: SetUp the configuration from Cukes runner, open maven lifecycle (from the right pane of IntelliJ) and select Verify.
+
+•	Run from command line with Maven: Maven should be installed, then go to the test project directory and do mvn verify
+
+End.
+
+
